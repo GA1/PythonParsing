@@ -1,6 +1,5 @@
 import re
 
-p = re.compile('[^\S\r\n]')
 
 def addApoAndComa(s):
     splitted = s.split("\n")
