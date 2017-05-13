@@ -1,8 +1,9 @@
-def addApoAndComa(s):
-    splitted = s.split("\n")
-    for i in range(len(splitted) - 1):
-        print("\"" + splitted[i].strip() + "\"," )
-    print("\"" + splitted[len(splitted) - 1].strip() + "\"")
+
+def add_apostrophes_and_comas(s):
+    split = [s.strip() for s in s.split("\n")]
+    for i in range(len(split) - 1):
+        print("\"" + split[i] + "\"," )
+    print("\"" + split[len(split) - 1] + "\"")
 
 s = """          bell
           Sigismund [name]
@@ -26,4 +27,4 @@ s = """          bell
           Marie
           Mother of God"""
 
-addApoAndComa(s)
+add_apostrophes_and_comas(s)
