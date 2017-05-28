@@ -29,3 +29,9 @@ with open('input.txt') as input_file:
         json_sentence = add_apostrophes_and_comas(joint)
         json_sentences.append(json_sentence)
     output.write('[' + ','.join(json_sentences) + ']')
+
+
+# TODO
+# assert every word sequence is terminated with .!?
+# assert every translation is terminated with .!?
+# assert words and translations have the same size
